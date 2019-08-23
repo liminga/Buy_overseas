@@ -1,0 +1,318 @@
+
+/*this is header*/
+header{
+	margin:10px ;
+}
+.document-msg{
+	font-size: 20px;
+	color:#d00387;
+
+}
+.logo{
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+/*.document-msg span{
+	height: 50px;
+	line-height: 50px;
+}*/
+/*End header*/
+/*this is nav*/
+.content{
+	position: relative;
+	width:100%;
+	height: 600px;
+	background: url("../img/registry.png") 0px 0px;
+}
+
+.banner{
+ 	float:left;
+ 	width:800px;
+}
+.banner>div{
+	width:700px;
+	height: 600px;
+	border:1px solid #000; 
+}
+.login{
+	/*float:left;*/
+	position: absolute;
+	right:20px;
+	width:390px;
+	height: 400px;
+	margin-top:80px;
+	border:1px solid rgb(220,220,220);
+	background: #FFF;
+}
+.title{
+	height: 55px;
+	margin-left:10px;
+	border-bottom:1px solid #ccc;
+}
+.title ul li{
+	float:left;
+	height: 55px;
+	line-height: 55px;
+	padding: 0 30px;
+}
+.title ul li.active{
+	border-bottom:1px solid red;
+}
+form{
+	margin-left:40px;
+	margin-top:10px;
+}
+form div{
+	width: 320px;
+}
+.form-group{
+	position: relative;
+	height: 30px;
+}
+.label-control{
+	position: absolute;
+	left:0;
+	top:0;
+	height: 32px;
+	width:100px;
+}
+input[name=tel]{
+	width:185px;
+}
+.input-tip{
+	height: 22px;
+	line-height: 22px;
+	padding-left:10px;
+	color:#ccc;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.vjsTiperror{
+	color:red;
+}
+.vJsInputerror{
+	border:1px solid red;
+}
+.input-correct{
+	color:#0085d0
+}
+form:nth-child(2){
+	
+}
+.user-name,
+.password
+{
+	width:294px;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 4px;
+	border-width: 1px;
+}
+.clone-node{
+
+}
+input[type=checkbox]{
+	height: 28px;
+	line-height: 30px;
+	float:left;
+}
+input[type=checkbox]+span{
+	float:left;
+	font-size: 12px;
+	color:#999;
+}
+.clone-node div:first-child>a:last-child{
+	float:right;
+	font-size:12px;
+	color:#999;
+}
+input[type=submit]{
+	width:100%;
+	height: 32px;
+	color:#fff;
+	background: #ff1777;
+	border:0;
+	outline:none;
+	border-radius:8px;
+}
+.clone-node a{
+	display: inline-block;
+	line-height: 30px;
+	color:#999;
+	font-size: 12px;
+}
+.clone-node span{
+	display: inline-block;
+	line-height: 30px;
+	color:#999;
+	font-size:12px;
+}
+.pc-login{
+	width: 53px;
+	height: 46px;
+	
+}
+.soma-login{
+	width: 53px;
+	height: 46px;
+}
+.new-login a:nth-child(1){
+	float:left;
+}
+.new-login a:nth-child(2){
+	float:right;
+}
+.qq-login,
+.weixin-login,
+.weibo-login{
+	float:left;
+	width:33%;
+	height: 38px;
+}
+.qq-login{
+}
+.weixin-login{	
+}
+.weibo-login{	
+}
+
+/*第二个表单元素，即手机登陆 开始*/
+
+
+
+.country-select{
+	position: relative;
+	float:left;
+	width:100px;
+	height: 28px;
+	line-height: 28px;
+	margin:0;
+	margin-right:10px;
+	padding:0;
+
+	text-indent: 4px;
+	background: url("../img/upload.png") no-repeat 60px -8px;
+	border:1px solid rgb(169, 169, 169);
+}
+.country-select h3{
+	font-size:16px;
+	font-weight: 700;
+}
+.select-options{
+	position: absolute;
+	top:29px;
+	left:0px;
+	width:100px;
+	background:#fbbf72;
+	z-index: 12;
+	color:#fff;
+}
+.select-options li{
+	color:#fff;
+	font-size:14px;
+}
+.select-options li:hover{
+	background: #ff4467;
+}
+.tel-form input[type=text]{
+	float:left;
+	width:193px;
+	height: 26px;
+	padding-left:10px;
+	border-width:1px;
+	outline:red;
+}
+.tel-form input[type=password]{
+	width:304px;
+	height:28px;
+	line-height: 28px;
+	padding-left:10px;
+	outline:none;
+	border-width: 1px;;
+}
+.tel-form input[type=button]{
+	width:100%;
+	height: 30px;
+	line-height: 30px;
+	background:#fd6582;
+	border-width:1px;
+	outline:none;
+}
+.qrcode{
+	display: none;
+}
+.qrcode a{
+	display: block;
+	bottom:10px;
+	width:100%;
+	margin-left:-10px;
+	text-align: center;
+}
+
+/**/
+.footer iframe{
+	width:100%;
+	height: 220px;
+	margin-top: -20px;
+	overflow: hidden;
+}
+
+/* PHP验证难过后过渡页面*/
+.dialog{
+	position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40vw;
+    min-height: 200px;
+    height: 50vh;
+    padding: 20px;
+    margin: auto;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 2px 2px 10px #ccc, -2px -2px 10px #ddd;
+}
+.dialog-header{
+	padding:10px;
+	font-weight: 700;
+	font-size:20px;
+	text-align: center;
+	color: #dff0d8; 
+	text-shadow:1px 1px 3px #337ab7;
+}
+
+.dialog-body{
+	font-size: 14px;
+}
+.dialog-body-title{
+	
+}
+.dialog-body-title span{
+	font-weight: 700;
+	font-size:16px;
+}
+.dialog-footer{
+	position: absolute;
+	bottom:0;
+	right: 0;
+	padding:5px;
+	text-align: right;
+}
+.dialog-footer a{
+	padding:5px;
+}
+.dialog-bg{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	z-index: 100;
+	opacity: 1;
+
+}

@@ -1,0 +1,123 @@
+/*header*/
+header{
+
+}
+/* End header*/
+/*content*/
+.content{
+
+}
+.isolayer{
+	position: fixed;
+	top:0;
+	left:0;
+	transform-style: preserve-3d;
+	transform: translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(45deg);
+	-webkit-transform: translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(45deg);
+	-moz-transform: translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(45deg);
+	-o-transform: translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(45deg);
+	width: 70vw;
+    max-width: 1200px;
+    height: calc(100vh - 280px);
+}
+
+	/*	一 html结构如下所示：
+			ul   >    li    >      a      >  [  img*3  ,   span];
+			grid >grid-item >  grid-link  >  [grid-img*3,grid-title]
+		二 ：所有的grid-item应该浮动，除了第一个grid-img外所有的grid-img应该基于其父元素绝对定位，
+
+	*/
+.grid{
+	position: relative; 
+	width: 70vw;
+	height: 7456px;
+	transform: translate3d(0px, 0px, 0px);
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-moz-transform: translate3d(0px, 0px, 0px);
+	-o-transform: translate3d(0px, 0px, 0px);
+	transform-style: preserve-3d;
+	-webkit-transform-style:preserve-3d;
+}
+.grid-item{
+	float:left;
+	width:300px;
+	padding:15px;
+	transform-style: preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	transition:all 1s;
+	-webkit-transition:all .8s;
+	/*opacity:0;*/
+	/*transform:scale(0);*/
+}
+.grid-link{
+	position: relative;
+	display: block;
+
+	transform-style: preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	transform: none;
+}
+.grid-link::before {
+    content: ''; 
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    opacity: 0.6;
+    background: rgba(0,0,0,0.8);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.8);
+    -webkit-transform: translateZ(-1px) scale(0.95);
+    transform: translateZ(-1px) scale(0.95);
+    -webkit-transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.grid-img{
+	transition:all 1s;
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+	-webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+.grid-img:first-of-type~img{
+	position: absolute;
+	left:0;
+	top:0;
+	/*z-index: 2;*/
+}
+.grid-title{
+	position: absolute;
+	left:0;
+	bottom:0;
+	z-index: 2;
+}
+.grid-item:hover{
+	z-index: 94;
+
+}
+.grid-item:hover .grid-link{
+	z-index: 94;
+}
+.grid-item:hover img:nth-of-type(1){
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 50, 1);
+	-webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 50, 1);
+	z-index: 2;
+}
+.grid-item:hover img:nth-of-type(2){
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 100, 1);
+	-webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 100, 1);
+	z-index: 3;
+}
+.grid-item:hover img:nth-of-type(3){
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 150, 1);
+	-webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 150, 1);
+	z-index: 4;
+}
+.onshow{
+	opacity:1;
+	transform:scale(1);
+}
+
+/*End content*/
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>父子间的transfrom相互影响问题</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.box{
+			width:400px;
+			height: 200px;
+			border:5px solid red;
+		}
+		.box-1{
+			width:100px;
+			height:100px;
+			background: red;
+			transition:1s;
+			transform:translateX(20px);
+		}
+		.box:hover .box-1{
+			transform:translateX(40px);
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="box-1">
+		</div>
+	</div>
+	<input type="button" value="点击察看效果" id="btn" onclick = "myfun()">
+	<textarea name="" id="" cols="30" rows="10"></textarea>
+<script>
+	
+	function myfun(){
+		document.getElementById("box").style.transform = "translateX(20px)"
+	}
+</script>
+</body>
+</html>

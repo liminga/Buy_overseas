@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>在数据库中查找用户名demo</title>
+</head>
+<body>
+	<script>
+		var xhr = new XMLHttpRequest();
+		xhr.open("post","username.php",true);
+		xhr.send()
+	</script>
+</body>
+</html>
+
+李哥，问个问题。我现在想做一个注册表单，
+一：功能需求
+	 用户名, 注册手机，注册邮箱 在失去焦点的时候，需要向数据库发出请求，
+	 验证这个该名称是否存在，
+	 如果存在，返回true,表示可以使用， 如果是false，则表示不可以使用，不能被提交到数据库。
+二：
+实现的【方式 1】 在php里做出相应的处理；
+	这样的一个功能，input失去焦点的时候，向一个php文件发出ajax请求，这个ajax请求连接数据库，获取对应表单中所有value(这个value是从注册页传递给php的,)
+	将传进来的value值与数据库中存在的value做比较，如果有相同的值，则返回false,如果不存在，则返回一个true；
+实现【方式 2】 在当前的注册页面做出处理；
+	同样向一个 php 发送请求，该 PHP 连接数据库，获取对应的value集合。返回这个集合，注册页拿到这个集合，在js中做处理。
+三：如果我是采用【方式 1】来实现；
+	我在考虑，我需要建立几个页面，还是建立一个页面，解决所有的验证
+	比如说：我有三个选项需要验证：username,手机号码,邮箱验证
+	我是建立三个页面，
+		username失去焦点的时候，ajax请求的是username.php
+		tel失去焦点的时候，ajax请求的是tel.php
+		email失去焦点的时候，ajax请求的是email.php
+	假如建立一个页面:
+		这一个页面，完成所有的验证；

@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>海购</title>
+	<!-- 设置IE浏览器兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- 兼容ie9以下的浏览器 -->
+	<!--[if lt IE 9]>
+		<scrip src="js/html5shiv.min.js">
+		<script src="js/respond.min.js">	
+	<![endif]-->
+	<!-- 设置网站的图标 -->
+	<link rel="icon" href="te.ico">
+
+	<!-- 忽略将页面中的数字识别为电话号码 -->
+  	<meta name="format-detection" content="telephone=no"/>
+  	<!-- 忽略对邮箱地址的识别 -->
+	<meta name="format-detection" content="email=no"/>
+	<!-- 忽略识别页面中的地址 -->
+	<meta name="format-detection" content="adress=no"/>
+	<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- <script type="text/javascript" src="js/httpCacheUtil.js"></script> -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="iconfon/iconfont.css">
+	<link rel="stylesheet" href="iconfo/iconfont.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/vue.js"></script>
+	<style type="text/css">
+		.span-url{
+			display: inline-block;
+			width:2rem;
+			height:2rem;
+			background: url("images/sprite_index.png")no-repeat 0px -39px;
+		}
+		.span-url2{
+			display: inline-block;
+			width:1rem;
+			height:1rem;
+			background: url("images/sprite_index.png")no-repeat -194px -53px;
+		}
+		.span-url3{
+			display: inline-block;
+			width:1rem;
+			height:1rem;
+			background: url("images/sprite_index.png")no-repeat -153px -36px;
+		}
+		.span-url4{
+			display: inline-block;
+			width:1rem;
+			height:1rem;
+			background: url("images/sprite_index.png")no-repeat -194px -53px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 容器 -->
+	<div class="container">
+		<!-- 左边的颜色选择器开始 -->
+		<div class="colorbox">
+			<span class="glyphicon glyphicon-cog"></span>
+			<h4 class="title ch41">Color Selector</h4>
+			<ul class="ulcolor">
+				<li >
+					<a href="javascript:void(0)" class="zhonglv"></a>
+					<a href="javascript:void(0)" class="danlv"></a>
+					<a href="javascript:void(0)" class="qianlv"></a>
+					<a href="javascript:void(0)" class="lvse"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="danlan"></a>
+					<a href="javascript:void(0)" class="zhonglan"></a>
+					<a href="javascript:void(0)" class="qianlan"></a>
+					<a href="javascript:void(0)" class="lanse"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="danzi"></a>
+					<a href="javascript:void(0)" class="zhongzi"></a>
+					<a href="javascript:void(0)" class="qianzi"></a>
+					<a href="javascript:void(0)" class="zise"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="dancheng"></a>
+					<a href="javascript:void(0)" class="zhongcheng"></a>
+					<a href="javascript:void(0)" class="qiancheng"></a>
+					<a href="javascript:void(0)" class="chengse"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="danhong"></a>
+					<a href="javascript:void(0)" class="zhonghong"></a>
+					<a href="javascript:void(0)" class="qianhong"></a>
+					<a href="javascript:void(0)" class="hongse"></a>
+				</li>
+			</ul>
+			<h4 class="title ch42">Container Selector</h4>
+			<div class="colorbtnbox">
+				<button class="colorbtn1">Boxed</button>
+				<button class="colorbtn2">FullWidth</button>
+			</div>
+		</div>
+		<!-- 左边的颜色选择器结束 -->
+		<!-- 右边导航开始 -->
+		<div class="right-daohang">
+			<span class="rigspan1">
+				初秋尝新
+				<img src="img/15029763508260.png">
+			</span>
+			<span class="iconfont icon-user rigspan2">
+				<span class="spansmail">账号
+					<div class="denlu">
+						<span class="glyphicon glyphicon-remove colse"></span>
+						<img src="img/my_cnt_pic.jpg" class="cnt_pic">
+						<p class="denlup">
+							<span>你好&nbsp;！请
+								<a href="denglu.php" class="title">登录</a>&nbsp;|&nbsp;
+								<a href="zhuce.php" class="title">注册</a>
+							</span>
+							<ul class="ul-denlu" id="uid">
+								<li>
+									<span class="iconfont icon-wodedingdan"></span>
+									<a href="javascript:void(0)" class="tl">我的订单</a>
+								</li>
+								<li>
+									<span class="iconfont icon-wodexiaoxi"></span>
+									<a href="javascript:void(0)" class="tl">我的消息</a>
+								</li>
+							</ul>
+							<a href="javascript:void(0)" class="huiyuan">会员俱乐部</a>
+						</p>
+					</div>
+				</span>
+			</span>
+			<span class="iconfont icon-gouwudai title-bg rigspan3">
+				购物袋<span class="jishu title">0</span>
+			</span>
+			<span class="iconfont icon-youhuijuan yuhuijuanbox">
+				<span class="yuhuijuan">我的优惠券</span>
+			</span>
+			<span class="iconfont icon-aixin aixinbox">
+				<span class="aixin">品牌收藏</span>
+			</span>
+			<span class="iconfont icon-wujiaoxing-shixin shoucangbox">
+				<span class="shoucang">商品收藏</span>
+			</span>
+			<span class="iconfont icon-zuji zujibox">
+				<span class="zuji">我的足迹</span>
+			</span>
+			<span class="iconfont icon-huabi fankuibox">
+				<span class="fankui">会员反馈</span>
+			</span>
+			<span class="iconfont icon-arrow-up top2box">
+				<span class="top2">返回顶部</span>
+			</span>
+		</div>
+		<!-- 右边导航结束 -->
+		<!-- 头部开始 -->
+		<header id="header">
+			<ul class="nav nav-pills nav1" >
+				<li class="dropdown">
+					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+						广东<span class="icon-caret-down xiala "></span>
+					</a>
+					<ul class="dropdown-menu menu-1">
+						<li class="dropdown-header">
+							<a href="javascript:void(0);">请选择所在的收货地区</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">A</span>
+								<span>安徽</span>
+								<span>澳门</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">B</span>
+								<span>北京</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">C</span>
+								<span>重庆</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">F</span>
+								<span>福建</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">G</span>
+								<span>广东</span>
+								<span>广西</span>
+								<span>贵州</span>
+								<span>甘肃</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">H</span>
+								<span>河北</span>
+								<span>河南</span>
+								<span>黑龙</span>
+								<span>江海</span>
+								<span>南湖</span>
+								<span>北湖南</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">J</span>
+								<span>江苏</span>
+								<span>吉林</span>
+								<span>江西</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">L</span>
+								<span>辽宁</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">N</span>
+								<span>内蒙古</span>
+								<span>宁夏</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">Q</span>
+								<span>青海</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">S</span>
+								<span>上海</span>
+								<span>山东</span>
+								<span>山西</span>
+								<span>四川</span>
+								<span>陕西</span>
+							</a>	
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">T</span>
+								<span>台湾</span>
+								<span>天津</span>
+							</a>	
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">X</span>
+								<span>西藏</span>
+								<span>香港</span>
+								<span>新疆</span>
+							</a>	
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">Y</span>
+								<span>云南</span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<span class="default">Z</span>
+								<span>浙江</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">请登录
+						<span class="xiegang">/</span>
+					</a>
+					<ul class="dropdown-menu menu-2">
+						<li>
+							<a href="javascript:void(0);">
+								<p>
+									<span>
+										<img src="images/imgjingpingnvzhuang/my_cnt_pic.jpg" alt="登录" class="default imgdenglu">
+										<span class="xuxian">
+										<a href="denglu.php">您好！[请登录]</a>
+										</span>
+									</span>
+								</p>
+								<p>
+									<span>我的收藏</span>
+									<span>我的订单</span>
+								</p>
+								<p>
+									<span>零钱</span>
+									<span>我的优惠券</span>
+								</p>
+								<p>
+									<span>我的海购币</span>
+									<span>海购金融</span>
+								</p>    
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="zhuce.php">注册<span class="xiegang">/</span></a>
+				</li>
+				<li class="libao-a">
+					<a href="javascript:void(0);">
+						<span class="iconfont icon-libao title"></span>
+						签到有礼
+						<span class="xiegang">/</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						我的订单
+						<span class="xiegang">/</span>
+					</a>
+				</li>
+				<li class="dropdown ac">
+					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+						我的特卖
+						<span class="icon-caret-down xiala2">
+						<span class="xiegang">/</span>
+					</a>
+					<ul class="dropdown-menu menu-3">
+						<li>
+							<a href="javascript:void(0);">品牌收藏(0)</a>
+							<a href="javascript:void(0);">商品收藏(0)</a>
+							<a href="javascript:void(0);">我的足迹(0)</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown ac">
+					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+						会员俱乐部
+						<span class="icon-caret-down xiala2">
+						<span class="xiegang">/</span>
+					</a>
+					<ul class="dropdown-menu menu-4">
+						<li>
+							<a href="javascript:void(0);">俱乐部首页</a>
+							<a href="javascript:void(0);">海购币兑换</a>
+							<a href="javascript:void(0);">免费抽大奖</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown ac">
+					<a href="javascript:void(0);"  class="dropdown-toggle" data-toggle="dropdown">
+						客户服务
+						<span class="icon-caret-down xiala2">
+						<span class="xiegang">/</span>
+					</a>
+					<ul class="dropdown-menu menu-5">
+						<li>
+							<a href="javascript:void(0);">联系客服</a>
+							<a href="javascript:void(0);">帮助中心</a>
+							<a href="javascript:void(0);">服务中心</a>
+							<a href="javascript:void(0);">知识产权投诉</a>
+						</li>
+					</ul>
+				</li>
+				<li  class="dropdown">
+					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="iconfont icon-shouji title"  ></span>
+						手机版
+						<span class="xiegang">/</span>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="javascript:void(0);"  class="dropdown-toggle" data-toggle="dropdown">
+						更多
+						<span class="icon-caret-down xiala2">
+						<span class="xiegang">/</span>
+					</a>
+					<ul class="dropdown-menu menu-6">
+						<li>
+							<a href="javascript:void(0);" class="dropdown-header">合作专区</a>
+							<a href="javascript:void(0);" >帮助中心</a>
+							<a href="javascript:void(0);">
+								<span>联名卡申请</span>
+								<span>海购卡</span>
+								<span> 支付专区</span>
+							</a>
+							<a href="javascript:void(0);" class="divider"></a>
+							<a href="javascript:void(0);">
+								<span>Sell on vip</span>
+								<span>品牌招商</span>
+								<span>官方博客</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="title-contai">
+				<div class="haitao col-xs-3 title">
+					<span class="iconfont icon-haiwaigou101 "></span>
+					海购
+				</div>
+				<div class="sousuo col-xs-7">
+					<input type="text" name="sousuo" class="col-lg-11 col-md-10 col-xs-10 title-border" placeholder="笔记本大牌满减">
+					<div class="col-lg-1 col-md-2 col-xs-2 sou title-bg">
+						<span class="iconfont icon-sousuo"></span>
+					</div>
+					<p class="input-p"> 
+						<a href="javascript:void(0);" class="input-p-a title">t恤男</a>
+						<a href="javascript:void(0);">连衣裙</a>
+						<a href="javascript:void(0);">夏凉被</a>
+						<a href="javascript:void(0);"  class="input-p-a title">空调</a>
+						<a href="javascript:void(0);">客厅灯</a>
+						<a href="javascript:void(0);">防晒霜</a>
+						<a href="javascript:void(0);"  class="input-p-a title">凉鞋</a>
+						<a href="javascript:void(0);">双肩包</a>
+						<a href="javascript:void(0);"  class="input-p-a title">驱蚊液</a>
+						
+					</p>
+				</div>
+				<div class="col-xs-1 guowu title-border">
+					<span class="iconfont icon-gouwuche1 title"></span>
+					我的购物车
+					<span>0</span>
+				</div>
+			</div>
+			<div class="title-contai2 title-bg">
+				<div class="haitao col-xs-3 title">
+					<span class="iconfont icon-haiwaigou101 "></span>
+					海购
+				</div>
+				<div class="sousuo col-xs-7">
+					<input type="text" name="sousuo" class="col-lg-11 col-md-10 col-xs-10 title-border" placeholder="狂欢周空调疯抢">
+					<div class="col-lg-1 col-md-2 col-xs-2 sou title-bg cursor">
+						<span class="iconfont icon-sousuo"></span>
+					</div>
+				</div>
+			</div>
+			<nav class="col-xs-12" id="nav2">
+				<ul class="title-bg" id="app">
+					<li class="ul-title">
+						<a href="javascript:void(0);">
+							<span class="icon-tasks"></span>
+							商品分类
+						</a>
+						<ul id="ul-lie-title">
+							<li class="lie-li">
+								<a href="javascript:void(0)" style="display: block;">
+									<span>女装</span>
+									<span>/内衣</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[0]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span> 男装</span>
+									<span>/运动户外</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[1]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>女鞋</span>
+									<span>/男鞋</span>
+									<span>/箱包</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[2]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>化妆品</span>
+									<span>/个人护理</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[3]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>腕表</span>
+									<span>/珠宝饰品</span>
+									<span>/眼镜</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[4]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>手机</span>
+									<span>/数码</span>
+									<span>/电脑办公</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[5]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>母婴玩具</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[0]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>/零食</span>
+									<span>/进口食品</span>
+									<span>/茶酒</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[1]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>生鲜水果</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[2]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span> 大家电</span>
+									<span>/生活电器</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[3]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>家具建材</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[4]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>汽车</span>
+									<span>/配件</span>
+									<span>/用品</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[0]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>家纺</span>
+									<span>/家饰</span>
+									<span>/鲜花</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[1]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>医药保健 </span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[2]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>厨具</span>
+									<span>/收纳</span>
+									<span>/宠物</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[3]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="lie-li">
+								<a href="javascript:void(0);">
+									<span>图书音像</span>
+								</a>
+								<ul class="ul1ie1" v-for="item in arrlie">
+									<li v-for="l in arrlie[4]">
+										<a href="javascript:void(0)" v-for="k in l">
+											{{k}}
+										</a>
+									</li>
+								</ul>
+								<ul class="ul1iee1" >
+									<li v-for="item in img">
+										<a href="javascript:void(0)" v-for="l in item">
+											<img :src="l" alt="">
+										</a>
+									</li>
+									<li id="img-last">
+										<a href="javascript:void(0)">
+										<img src="images/tubiao/nvzhuang/TB1xnkQKVXXXXaJXXXXXXXXXXXX-378-174.jpg" alt="">	
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li class="ul-li2">
+						<a href="javascript:void(0);">
+							海购超市
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							海购国际
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							海购会员
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							电器城
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							海鲜生
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							   医药馆   
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							营业厅
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							 魅力惠
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							飞猪旅行
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							苏宁易购
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- 头部结束 -->
+		<!-- 中部开始 -->
+		<div id="box">
+			<section class="section1 col-xs-12">
+			 <!-- 轮播图开始 -->
+			<div class="carousel slide" id="mycarousel" data-ride="carousel" data-pause="click">
+				<!-- 图片的容器 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="images/banner/1.jpg" class="col-xs-12">
+					</div>
+					<div class="item">
+						 <img src="images/banner/2.jpg" class="col-xs-12">
+					</div>
+					<div class="item">
+						 <img src="images/banner/3.jpg" class="col-xs-12">
+					</div>
+					<div class="item">
+						 <img src="images/banner/4.jpg" class="col-xs-12">
+					</div>
+					<div class="item">
+						 <img src="images/banner/5.jpg" class="col-xs-12">
+					</div>
+					<div class="item">
+						 <img src="images/banner/6.jpg" class="col-xs-12">
+					</div>
+				</div>
+				<!-- 指示容器 -->
+				<div>
+					<ol class="carousel-indicators"> 
+						<li data-slide-to="0" data-target="#mycarousel"></li>
+						<li data-slide-to="1" data-target="#mycarousel"></li>
+						<li data-slide-to="2" data-target="#mycarousel"></li>
+						<li data-slide-to="3" data-target="#mycarousel"></li>
+						<li data-slide-to="4" data-target="#mycarousel"></li>
+						<li data-slide-to="5" data-target="#mycarousel"></li>
+					</ol>
+					<a href="#mycarousel" class="carousel-control left" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left hide"></span>
+					</a>
+					<a href="#mycarousel" class="carousel-control right" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right hide"></span>
+					</a>
+				</div>
+			</div>
+			 <!-- 轮播图结束 --> 
+			</section>
+			<section class="section2 col-xs-12">
+				<h3 class="h3maisha title-bg">
+					<span class="span-url2"></span>
+					<span class="span-url"></span>
+					<span class="span-h3">海购秒杀</span>
+					<span class="span-maill">总有你想不到的低价
+						<span class="span-url3"></span>
+					</span>
+					<div class="time">
+						<span class="span-maill">当前场次</span>
+						<span class="time1 title">01</span>
+						<span class="time1 title">30</span>
+						<span class="time1 title">28</span>
+						<span class="span-maill">后结束抢购</span>
+					</div>
+				</h3>
+				<div class="img-box">
+					<ul>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/5975e10eNb74f6ce2.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">威古氏（VEGOOS）太阳镜男款偏光墨镜司机驾驶眼镜男士蛤</a>
+							<p>
+								<span class="dared">¥89.00</span>
+								<span class="line-through">¥139.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/590070a3N43048bcd.jpg">
+							</a>
+
+							<a href="javascript:void(0);" class="text-a">海尔模卡（MOOKA ）55Q3 55英寸 全高清曲面安卓智能液晶电视（黑色）</a>
+							<p>
+								<span class="dared">¥2989.00</span>
+								<span class="line-through">¥3999.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/5418ea42N548188de.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">固特异（Goodyear）轮胎/汽车轮胎 205/55R16 91W F1 Directional5 大众宝来 速腾 途安</a>
+							<p>
+								<span class="dared">¥419.00</span>
+								<span class="line-through">¥479.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/59657e9bN0c8d72db.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">长帝（changdi）电烤箱 家用多功能 搪瓷内胆 独立控温 CRTF32W</a>
+							<p>
+								<span class="dared">¥399.00</span>
+								<span class="line-through">¥599.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/598ac31dN3e7a364f.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">爱乐维 30片 叶酸复合维生素片（备孕、孕妇专用维生素矿物质</a>
+							<p>
+								<span class="dared">¥65.00</span>
+								<span class="line-through">¥98.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/592fe8d7N85f80257.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">美的（Midea）FS40-15QRW 五叶遥控落地扇/电风扇</a>
+							<p>
+								<span class="dared">¥199.00</span>
+								<span class="line-through">¥349.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/550a73a0N144e0e11.jpg">
+							</a>
+
+							<a href="javascript:void(0);" class="text-a">纽曼（Newsmy）星云（USB3.0）2.5英寸移动硬盘 星空黑 500GB 大容量存储空间</a>
+							<p>
+								<span class="dared">¥259.00</span>
+								<span class="line-through">¥299.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/5837f946N55d4eb57.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">鲜动生活 熟冻智利帝王蟹 1.2-1.4kg/只 礼盒装 海鲜水产</a>
+							<p>
+								<span class="dared">¥238.00</span>
+								<span class="line-through">¥288.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/58206a17N1cac12be.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">电视果3 爱奇艺智能网络电视机顶盒第三代 曜石黑 手机投屏 苹果安卓通用（内含爱奇艺VIP月卡）</a>
+							<p>
+								<span class="dared">¥178.00</span>
+								<span class="line-through">¥198.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/593a5739N7e28d9fa.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">【海淘超市】美赞臣安儿宝A+荷兰版幼儿配方奶粉 3段(12-36月龄幼儿适用)1200克（400克*3袋）</a>
+							<p>
+								<span class="dared">¥235.00</span>
+								<span class="line-through">¥259.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/5953892aN96e87318.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">【2件立减10元】华润 美仑达 海南红心火龙果 中果3个装 单果250~350g 新鲜水果</a>
+							<p>
+								<span class="dared">¥19.90</span>
+								<span class="line-through">¥54.90</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/598421feNc23e97e1.jpg">
+							</a>
+
+							<a href="javascript:void(0);" class="text-a">戴尔（DELL） U2717D 27英寸四面超窄边2K超高清旋转升降IPS屏显示器</a>
+							<p>
+								<span class="dared">¥3699.00</span>
+								<span class="line-through">¥3899.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/58d8ba43N2e7ca20b.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">TCL 正1.5匹 六六顺 超一级能效 智能 冷暖 空调挂机（全直流变频）（KFRd-35GW/F2AH11BpA）</a>
+							<p>
+								<span class="dared">¥2988.00</span>
+								<span class="line-through">¥3699.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/586b260eN91b4c5c3.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">【海淘超市】海飞丝去屑洗发露丝质柔滑型500ml*2 送 致美水润洗发水80ml（新老包装随机发货，男女士通用）</a>
+							<p>
+								<span class="dared">¥69.80</span>
+								<span class="line-through">¥98.00</span>
+							</p>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/59312f28Neb51677f.jpg">
+							</a>
+							<a href="javascript:void(0);" class="text-a">KKTV U55W 55英寸4K超高清 HDR 金属机身 21核智能语音网络液晶平板电视机 康佳出品 香槟金色</a>
+							<p>
+								<span class="dared">¥2498.00</span>
+								<span class="line-through">¥3999.00</span>
+							</p>
+						</li>
+						<li>
+					</ul>
+					<span class="glyphicon glyphicon-chevron-left lt"></span>
+					<span class="glyphicon glyphicon-chevron-right gt"></span>
+				</div>
+				<div class="img-boxright">
+					<ul>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/5992a110N59b00ad0.jpg">
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<img src="images/tianmao/5992c3c6N33b97360.jpg">
+							</a>
+						</li>
+					</ul>
+					<div class="btn-liright">
+						<a href="javascript:void(0);" class="btn1"></a>
+						<a href="javascript:void(0);" class="btn2"></a>
+					</div>
+				</div>
+				<div class="ul-box-img col-xs-12">
+					<div>
+						<h3 class="h32 title-bg">
+							<span class="span-url4"></span>
+							<span class="span-h32">发现好货</span>
+							<span class="span-maill">发现品质生活
+								<span class="span-url3"></span>
+							</span>
+						</h3>
+						<ul class="ul-img1">
+							<li>
+								<a href="javascript:void(0);">
+									vivo Xplay6磨砂黑
+								</a>
+								<div href="javascript:void(0);">
+									<img src="images/tianmao/59906a32N3a5e2bff.jpg!q90.webp.jpg">
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									伊芙丽条纹系带衬衫裙
+								</a>
+								<div href="javascript:void(0);">
+									<img src="images/tianmao/599159b0N8f74cad1.jpg!q90.webp.jpg">
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									戴尔 指纹识别轻薄本
+								</a>
+								<div href="javascript:void(0);">
+									<img src="images/tianmao/5978a5b2N9de4f9ca.jpg!q90.webp.jpg">
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									雪纺衫A字半裙套装
+								</a>
+								<div href="javascript:void(0);">
+									<img src="images/tianmao/59919e04Ned43e43b.jpg!q90.webp.jpg">
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									贵州茅台 飞天茅台
+								</a>
+								<div href="javascript:void(0);">
+									<img src="images/tianmao/57e8e20cNfb8cc17d.jpg!q90.webp.jpg">
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0);">
+									衣香丽影 灯笼袖衬衫
+								</a>
+								<div href="javascript:void(0);">
+									<img src="images/tianmao/599131ceN81fd2177.jpg!q90.webp.jpg">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="h32-condiv">
+						<h3 class="h32 title-bg">
+							<span class="span-url4"></span>
+							<span class="span-h32">会买专辑</span>
+							<span class="span-maill">甄选优质好物
+								<span class="span-url3"></span>
+							</span>
+						</h3>
+						<div class="div-con">
+							<ul class="ul-con">
+								<li class="cenli">
+									<p>
+										<a href="javascript:void(0);">			你离有女友，可能就差个能拍美照的双摄手机
+										</a>
+									</p>
+									<img src="images/tianmao/594a37a7Nbf238ce7.jpg">
+									<img src="images/tianmao/57d11c33N5cd57490.jpg">
+									<img src="images/tianmao/593e4a5dN7fb3dedc.jpg">	
+								</li>
+								<li>
+									<p><a href="javascript:void(0);">气质衬衫裙，上班约会两不误</a></p>
+									<img src="images/tianmao/59927d70N2d523b9f.jpg">
+									<img src="images/tianmao/59927f70Nef5359e5.jpg">
+									<img src="images/tianmao/59927d1aNe09bc710.jpg">
+								</li>
+							</ul>
+							<ul class="ul-con">
+								<li class="cenli">
+									<p>
+										<a href="javascript:void(0);">			七夕撩动TA心，粉色数码轻松助力
+										</a>
+									</p>
+									<img src="images/tianmao/59116867N06449033.jpg">
+									<img src="images/tianmao/58da2a81Nbb8b807d.jpg">
+									<img src="images/tianmao/rBEhV1MQZVQIAAAAAAJmWjLfOW4AAJWqgDyYmUAAmZy933.jpg">	
+								</li>
+								<li>
+									<p><a href="javascript:void(0);">简约黑T，打造酷炫潮男范儿</a></p>
+									<img src="images/tianmao/599104e6N838320a6.jpg">
+									<img src="images/tianmao/59910515Ne6d020d0.jpg">
+									<img src="images/tianmao/5991053dN1f322c31.jpg">
+								</li>
+							</ul>
+							<ul class="ul-con">
+								<li class="cenli">
+									<p>
+										<a href="javascript:void(0);">			Apple领衔， 高颜值情侣款手机大赏
+										</a>
+									</p>
+									<img src="images/tianmao/58d484a0N1d9d2ebf.jpg">
+									<img src="images/tianmao/57d11b6cN1fd1194d.jpg">
+									<img src="images/tianmao/57d11c33N5cd57490.jpg">	
+								</li>
+								<li>
+									<p><a href="javascript:void(0);">食材冰爽锁鲜，源自三门静音抑菌冰箱</a></p>
+									<img src="images/tianmao/577f3a97N143c5568.jpg">
+									<img src="images/tianmao/5931017bNaaebf726.jpg">
+									<img src="images/tianmao/58c0ce77N9128e013.jpg">
+								</li>
+							</ul>
+							<span class="glyphicon glyphicon-chevron-left conlt"></span>
+							<span class="glyphicon glyphicon-chevron-right congt"></span>
+							<div class="btnsco">
+								<a href="javascript:void(0);"></a>
+								<a href="javascript:void(0);"></a>
+								<a href="javascript:void(0);"></a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h3 class="h32 title-bg">
+							<span class="span-url4"></span>
+							<span class="span-h32">排行榜</span>
+							<span class="span-maill">专属你的购物指南
+								<span class="span-url3"></span>
+							</span>
+						</h3>
+						<ul class="img-tit">
+							<li><a href="javascript:void(0);">创意礼品</a></li>
+							<li><a href="javascript:void(0);">手机通讯</a></li>
+							<li><a href="javascript:void(0);">手机保护套</a></li>
+							<li><a href="javascript:void(0);">唇部</a></li>
+							<li><a href="javascript:void(0);">糖果/巧克力</a></li>
+						</ul>
+						<div class="rightimg-div">
+							<ul class="ulimg-right">
+								<li>
+									<img src="images/tianmao/58c8eeb9N56cd241d.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">柯柯安干花复古牛皮贺卡生日祝福卡</a>
+								</li>
+								<li>
+									<img src="images/tianmao/561cbed4N501a5010.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【海淘超市】JOBON中邦钥匙扣圈</a>
+								</li>
+								<li>
+									<img src="images/tianmao/5992d574Nb4bb21a1.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【同款买2赠1 天黑自动亮 </a>
+								</li>
+								<li>
+									<img src="images/tianmao/598d25a8N120d7572.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【55度恒温杯】暖暖杯七夕情人节礼物</a>
+								</li>
+								<li>
+									<img src="images/tianmao/59867851Nf665e4cc.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">芭芭小熊 生日礼物女生创意礼品圣诞节</a>
+								</li>
+								<li>
+									<img src="images/tianmao/5938ad8cN96d403ed.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">礼意久久【软软】生日礼物女生</a>
+								</li>
+							</ul>
+							<ul class="ulimg-right">
+								<li>
+									<img src="images/tianmao/593e4a5dN7fb3dedc.jpg">
+									<a href="javascript:void(0);">荣耀9 全网通 标配版 4GB+64GB 幻</a>
+								</li>
+								<li>
+									<img src="images/tianmao/593ba628N8794c6a6.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">小米 红米Note4X 全网通版 4GB+64</a>
+								</li>
+								<li>
+									<img src="images/tianmao/58b8be79N56207c37.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">荣耀 V9 全网通 高配版 6GB+64GB </a>
+								</li>
+								<li>
+									<img src="images/tianmao/594a37a7Nbf238ce7.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">一加手机5 (A5000) 8GB+128GB</a>
+								</li>
+								<li>
+									<img src="images/tianmao/58d87c83Ndaddfb70.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">小米 红米 4X 全网通版 3GB+32GB</a>
+								</li>
+								<li>
+									<img src="images/tianmao/542d0798N19d42ce3.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">Apple iPhone 6 32GB 金色 移动联</a>
+								</li>
+							</ul>
+							<ul class="ulimg-right">
+								<li>
+									<img src="images/tianmao/59633d04Ne324d8c7.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">柯柯安干花复古牛皮贺卡生日祝福卡</a>
+								</li>
+								<li>
+									<img src="images/tianmao/58fd69d1Ne08088ea.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【海淘超市】JOBON中邦钥匙扣圈</a>
+								</li>
+								<li>
+									<img src="images/tianmao/59671c6dNa9dc803c.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【同款买2赠1 天黑自动亮 </a>
+								</li>
+								<li>
+									<img src="images/tianmao/58997427Nfe64fe5f.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【55度恒温杯】暖暖杯七夕情人节礼物</a>
+								</li>
+								<li>
+									<img src="images/tianmao/596f0117N69d3cb93.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">芭芭小熊 生日礼物女生创意礼品圣诞节</a>
+								</li>
+								<li>
+									<img src="images/tianmao/59776c9aNb356e0a7.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">礼意久久【软软】生日礼物女生</a>
+								</li>
+							</ul>
+							<ul class="ulimg-right">
+								<li>
+									<img src="images/tianmao/58217131Nf8e9d72b.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">荣耀9 全网通 标配版 4GB+64GB 幻</a>
+								</li>
+								<li>
+									<img src="images/tianmao/53fd7826N1616dba7.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">小米 红米Note4X 全网通版 4GB+64</a>
+								</li>
+								<li>
+									<img src="images/tianmao/84810a47-5d61-41e6-9090-12931ed354f1.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">荣耀 V9 全网通 高配版 6GB+64GB </a>
+								</li>
+								<li>
+									<img src="images/tianmao/5990ffc4Na6465794.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">一加手机5 (A5000) 8GB+128GB</a>
+								</li>
+								<li>
+									<img src="images/tianmao/597aa0ebN36fdb07a.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">小米 红米 4X 全网通版 3GB+32GB</a>
+								</li>
+								<li>
+									<img src="images/tianmao/582172e4N6bf103a1.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">Apple iPhone 6 32GB 金色 移动联</a>
+								</li>
+							</ul>
+							<ul class="ulimg-right">
+								<li>
+									<img src="images/tianmao/591403a9Nc1fc061b.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">柯柯安干花复古牛皮贺卡生日祝福卡</a>
+								</li>
+								<li>
+									<img src="images/tianmao/rBEQYVGkXvUIAAAAAAJQot4_OH4AACLbQFfJZ0AAlC6567.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【海淘超市】JOBON中邦钥匙扣圈</a>
+								</li>
+								<li>
+									<img src="images/tianmao/58be1e34N9b576029.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【同款买2赠1 天黑自动亮 </a>
+								</li>
+								<li>
+									<img src="images/tianmao/58cbcc85N7f9dc459.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">【55度恒温杯】暖暖杯七夕情人节礼物</a>
+								</li>
+								<li>
+									<img src="images/tianmao/57ce94daN2701d430.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">芭芭小熊 生日礼物女生创意礼品圣诞节</a>
+								</li>
+								<li>
+									<img src="images/tianmao/57be8b39N43603bbc.jpg!q90.webp.jpg">
+									<a href="javascript:void(0);">礼意久久【软软】生日礼物女生</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+			<section class="section3 col-xs-12">
+				<section class="section33 it">
+					<h3 class="tit-h3img">
+						<img src="images/clock2.png">
+					</h3>
+					<ul class="xintemai">
+						<li class="leftimg">
+							<img src="images/jinshuan/PC_niac.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary.png">
+								<h4>穿着自己独特的时尚</h4>
+								<p>满498减60，上不封顶</p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/KF163TK10G-BU-5.jpg">
+											￥319
+										</li>
+										<li>
+											<img src="images/jinshuan/26614745-PK-5.jpg">
+											￥249
+										</li>
+										<li>
+											<img src="images/jinshuan/26613433-PC-5.jpg">
+											￥309
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary.png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/jinshuan/PC_xddq.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/2013052016182883543.jpg">
+								<h4>演绎浪漫，诠释经典</h4>
+								<p></p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/I71042010300-5.jpg">
+											￥525
+										</li>
+										<li>
+											<img src="images/jinshuan/56451fd6-8064-4714-92bb-55ed3f688959_t.jpg">
+											￥809
+										</li>
+										<li>
+											<img src="images/jinshuan/A-H71024031200-5.jpg">
+											￥452
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/2013052016182883543.jpg">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="leftimg">
+							<img src="images/jinshuan/OK_geir.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary (4).png">
+								<h4>始于颜值，忠于内涵</h4>
+								<p>满498减100，上不封顶</p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/86bff506-5953-44cc-a33a-2c8e10742b0e_t.jpg">
+											￥699
+										</li>
+										<li>
+											<img src="images/jinshuan/58217454-36e6-4d7f-95b3-4a7f5533b820_t.jpg">
+											￥699
+										</li>
+										<li>
+											<img src="images/jinshuan/d1e322be-3b58-492b-b05d-43ef9b18133a.jpg">
+											￥699
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary (4).png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/jinshuan/PC_jvgw.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary (10).png">
+								<h4>户外休闲，最佳搭档</h4>
+								<p>购物满2件，即享8.8折</p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/5005481-1127-5.jpg">
+											￥702
+										</li>
+										<li>
+											<img src="images/jinshuan/Jack-wolfskin-1500692-5116-5.jpg">
+											￥549
+										</li>
+										<li>
+											<img src="images/jinshuan/2d6c6bed-f3f2-42c1-9a8f-1db7252692d7.jpg">
+											￥247
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary (10).png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="leftimg">
+							<img src="images/jinshuan/1502877940508.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary (11).png">
+								<h4>品味&nbsp;优雅&nbsp;生活</h4>
+								<p>满498减80，上不封顶</p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/95b651b1-e7a7-48ad-936f-7ea5bae6f8a7.jpg">
+											￥398
+										</li>
+										<li>
+											<img src="images/jinshuan/a17f1b13-e780-4689-87cf-f25ada59bdcb.jpg">
+											￥468
+										</li>
+										<li>
+											<img src="images/jinshuan/103c4332-5d74-48ec-856f-68bc638cd1c7.jpg">
+											￥468
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary (11).png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/jinshuan/KIPLINGok.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary (12).png">
+								<h4>潮包伴夏，乐享生活</h4>
+								<p>满498减100，上不封顶</p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/c00e6073-c7c9-4a6d-8ee3-9d41ee4024a7.jpg">
+											￥619
+										</li>
+										<li>
+											<img src="images/jinshuan/c91c6db8-9b66-4017-896c-ad7df59c810e.jpg">
+											￥645
+										</li>
+										<li>
+											<img src="images/jinshuan/77c30351-79c7-4117-afc8-ac38fa7f172b.jpg">
+											￥685
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary (12).png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="leftimg">
+							<img src="images/jinshuan/8_fivh.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary (13).png">
+								<h4>周而复始，生生不息</h4>
+								<p>购物即享8.5折优惠</p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/6044d49f-e975-4c19-a786-0828e5412bd5.jpg">
+											￥1009
+										</li>
+										<li>
+											<img src="images/jinshuan/a253c2bb-a53c-4667-aad7-1dd1c68d0f0c.jpg">
+											￥11267
+										</li>
+										<li>
+											<img src="images/jinshuan/0a28b80e-8bb1-43ee-9f0f-c0a0dcf784ab.jpg">
+											￥1786
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary (13).png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/jinshuan/1502874179941.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary (14).png">
+								<h4>专注时尚潮流&nbsp;个性品味</h4>
+								<p></p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/0020-390001-2000111-5.jpg">
+											￥159
+										</li>
+										<li>
+											<img src="images/jinshuan/a26ea88e-1506-439d-a852-91731398b05f.jpg">
+											￥449
+										</li>
+										<li>
+											<img src="images/jinshuan/8888815173202-5.jpg">
+											￥79
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary (14).png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="leftimg">
+							<img src="images/jinshuan/PC11_bwkd.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary (16).png">
+								<h4>爱慕集团爱慕&nbsp;最好的自己</h4>
+								<p></p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/8f811237-58e3-485b-966b-dfc73fd85158_t.jpg">
+											￥188
+										</li>
+										<li>
+											<img src="images/jinshuan/977962d2-a671-4fc3-8ee5-4d5c0641a138_t.jpg">
+											￥159
+										</li>
+										<li>
+											<img src="images/jinshuan/98e7638c-915e-46f2-9a35-29ad081d7087.jpg">
+											￥188
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary (16).png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/jinshuan/PC_byzk.jpg" alt="">
+							<div class="zhongdiv">
+								<img src="images/jinshuan/primary (15).png">
+								<h4>LEE&nbsp;牛仔欢乐出发</h4>
+								<p></p>
+							</div>
+							<div class="disdiv">
+								<div class="shang-bg">
+								</div>
+								<div class="shangdiv">
+									<ul class="xian">
+										<li>
+											<img src="images/jinshuan/f0e6ccb7-91f4-491c-bb94-2bcaa7bd5f8f_t.jpg">
+											￥450
+										</li>
+										<li>
+											<img src="images/jinshuan/5d50579b-eab5-4cad-b326-f3d68138a454_t.jpg">
+											￥790
+										</li>
+										<li>
+											<img src="images/jinshuan/df71ad12-9dab-4ae1-a95b-9fec1e031d61_t (1).jpg">
+											￥450
+										</li>
+									</ul>
+									<ul class="hou">
+										<li>
+											<img src="images/jinshuan/primary (15).png">
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												<span class="iconfont icon-aixin"></span>
+												收藏品牌
+											</a>
+										</li>
+										<li>
+											<a href="javascript:void(0)">
+												进入专场
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div style=" clear: both"></div>
+				</section>
+				<section class="section33 it">
+					<h3 class="tit2-h3img">
+						<img src="images/imgjingpingnvzhuang/woman_2ad.png">
+						<div class="nvzhuang">
+							全部女装品牌
+							<span class="glyphicon glyphicon-circle-arrow-right"></span>
+						</div>
+					</h3>
+					<div class="conimgbox">
+						<div class="con con-leftimg">
+						    <div class="con_top">
+						        <!-- 前面的盒子 -->
+						        <div class="con_top_Img" ondragstart="return false;">
+						            <img src="images/imgjingpingnvzhuang/1502964554333_570x273_90.jpg">
+						        </div>
+						        <!-- 拖动按钮 -->
+						        <div class="con_top_btn"ondragstart="return false;">
+						            <img src="images/imgjingpingnvzhuang/xhu.jpg">    
+						        </div>
+						    </div>
+						    <!-- 后面的盒子 -->
+						    <div class="con_bottom" ondragstart="return false;">
+						        <img src="images/imgjingpingnvzhuang/LOGO_kudd_570x273_90.jpg">
+						    </div>
+						    <p class="p-zhehou">
+						    	<span class="firspan title">1.2</span>
+						    	<span>折起</span>&nbsp;
+						    	<span>宝姿PORTS女装专场</span>
+						    	<span>
+						    		<span class="glyphicon glyphicon-time title"></span>
+						    		剩5天
+						    	</span>
+						    </p>
+						</div>
+						<div class="con">
+						    <div class="con_top">
+						        <!-- 前面的盒子 -->
+						        <div class="con_top_Img" ondragstart="return false;">
+						            <img src="images/imgjingpingnvzhuang/3iphone_pisu_570x273_90.jpg">
+						        </div>
+						        <!-- 拖动按钮 -->
+						        <div class="con_top_btn"ondragstart="return false;">
+						            <img src="images/imgjingpingnvzhuang/xhu.jpg">    
+						        </div>
+						    </div>
+						    <!-- 后面的盒子 -->
+						    <div class="con_bottom" ondragstart="return false;">
+						        <img src="images/imgjingpingnvzhuang/LOGO_jwgp_570x273_90.jpg">
+						    </div>
+						    <p class="p-zhehou">
+						    	<span class="firspan title">1.8</span>
+						    	<span>折起</span>&nbsp;
+						    	<span>宝姿PORTS男装专场</span>
+						    	<span>
+						    		<span class="glyphicon glyphicon-time title"></span>
+						    		剩5天
+						    	</span>
+						    </p>
+						</div>
+						<div class="con con-leftimg">
+						    <div class="con_top">
+						        <!-- 前面的盒子 -->
+						        <div class="con_top_Img" ondragstart="return false;">
+						            <img src="images/nvzhuang/lily_qeds_570x273_90 (1).jpg">
+						        </div>
+						        <!-- 拖动按钮 -->
+						        <div class="con_top_btn"ondragstart="return false;">
+						            <img src="images/imgjingpingnvzhuang/xhu.jpg">    
+						        </div>
+						    </div>
+						    <!-- 后面的盒子 -->
+						    <div class="con_bottom" ondragstart="return false;">
+						        <img src="images/nvzhuang/3750x360_fwoe_570x273_90.jpg">
+						    </div>
+						    <p class="p-zhehou">
+						    	<span class="firspan title">1.2</span>
+						    	<span>折起</span>&nbsp;
+						    	<span>丽丽lily女装专场</span>
+						    	<span>
+						    		<span class="glyphicon glyphicon-time title"></span>
+						    		剩2天
+						    	</span>
+						    </p>
+						</div>
+						<div class="con">
+						    <div class="con_top">
+						        <!-- 前面的盒子 -->
+						        <div class="con_top_Img" ondragstart="return false;">
+						            <img src="images/nvzhuang/1503022072452_570x273_90.jpg">
+						        </div>
+						        <!-- 拖动按钮 -->
+						        <div class="con_top_btn"ondragstart="return false;">
+						            <img src="images/imgjingpingnvzhuang/xhu.jpg">    
+						        </div>
+						    </div>
+						    <!-- 后面的盒子 -->
+						    <div class="con_bottom" ondragstart="return false;">
+						        <img src="images/nvzhuang/ias_150295682148571_570x273_90.jpg">
+						    </div>
+						    <p class="p-zhehou">
+						    	<span class="firspan title">1.5</span>
+						    	<span>折起</span>&nbsp;
+						    	<span>爱慕AIMER内衣专场</span>
+						    	<span>
+						    		<span class="glyphicon glyphicon-time title"></span>
+						    		剩5天
+						    	</span>
+						    </p>
+						</div>
+						<div class="con con-leftimg">
+						    <div class="con_top">
+						        <!-- 前面的盒子 -->
+						        <div class="con_top_Img" ondragstart="return false;">
+						            <img src="images/nvzhuang/ias_150287653422114_570x273_90.jpg">
+						        </div>
+						        <!-- 拖动按钮 -->
+						        <div class="con_top_btn"ondragstart="return false;">
+						            <img src="images/imgjingpingnvzhuang/xhu.jpg">    
+						        </div>
+						    </div>
+						    <!-- 后面的盒子 -->
+						    <div class="con_bottom" ondragstart="return false;">
+						        <img src="images/nvzhuang/ias_150269574389327_570x273_90.jpg">
+						    </div>
+						    <p class="p-zhehou">
+						    	<span class="firspan title">1</span>
+						    	<span>折起</span>&nbsp;
+						    	<span>Five Plus女装专场</span>
+						    	<span>
+						    		<span class="glyphicon glyphicon-time title"></span>
+						    		剩3天
+						    	</span>
+						    </p>
+						</div>
+						<div class="con">
+						    <div class="con_top">
+						        <!-- 前面的盒子 -->
+						        <div class="con_top_Img" ondragstart="return false;">
+						            <img src="images/nvzhuang/750x3604_cvrw_570x273_90.jpg">
+						        </div>
+						        <!-- 拖动按钮 -->
+						        <div class="con_top_btn"ondragstart="return false;">
+						            <img src="images/imgjingpingnvzhuang/xhu.jpg">    
+						        </div>
+						    </div>
+						    <!-- 后面的盒子 -->
+						    <div class="con_bottom" ondragstart="return false;">
+						        <img src="images/nvzhuang/ias_150278649441559_570x273_90.jpg">
+						    </div>
+						    <p class="p-zhehou">
+						    	<span class="firspan title">1.6</span>
+						    	<span>折起</span>&nbsp;
+						    	<span>秋季新品特辑VOL.2-韩都衣舍女装专场</span>
+						    	<span>
+						    		<span class="glyphicon glyphicon-time title"></span>
+						    		剩3天
+						    	</span>
+						    </p>
+						</div>
+					</div>
+					<!-- <div style="clear: both"></div> -->
+				</section>
+				<section class="section33 it xiebao">
+					<h3 class="tit2-h3img">
+						<img src="images/imgxiebao/shoe.png">
+						<div class="nvzhuang">
+							全部鞋包品牌
+							<span class="glyphicon glyphicon-circle-arrow-right"></span>
+						</div>
+						<div class="imgbox">
+							<div class="div-img dis-left">
+								<a href="javascript:void(0);"><img src="images/imgxiebao/ias_150294616573355_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									全场任选两双199，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">1.4</span>
+									<span>折起</span>&nbsp;
+									<span>珂卡芙KEKAFU女鞋专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩2天
+									</span>
+								</p>
+							</div>
+							<div class="div-img">
+								<a href="javascript:void(0);"><img src="images/imgxiebao/ias_150286177814200_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									150元任选两件上不封顶，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">78</span>
+									<span>元起</span>&nbsp;
+									<span>森马集团Semir青春潮流男女鞋包混合专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩19时
+									</span>
+								</p>
+							</div>
+							<div class="div-img dis-left">
+								<a href="javascript:void(0);"><img src="images/imgxiebao/ias_150261227951691_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									159元任选2件，上不封顶
+								</span>
+
+								<p class="p-zhehou">
+									<span class="firspan title">1</span>
+									<span>折起</span>&nbsp;
+									<span>全场159两双-意尔康旗下-YRC男女鞋专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩19时
+									</span>
+								</p>
+							</div>
+							<div class="div-img">
+								<a href="javascript:void(0);"><img src="images/imgxiebao/ias_150285627769752_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									139元任选两件上不封顶，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">1</span>
+									<span>折起</span>&nbsp;
+									<span>ZH.R女鞋专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩2天
+									</span>
+								</p>
+							</div>
+							<div class="div-img dis-left">
+								<a href="javascript:void(0);"><img src="images/imgxiebao/ias_150243231224399_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									288元任选2件，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">1.4</span>
+									<span>折起</span>&nbsp;
+									<span>HATINI赫缇妮女包专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩3天
+									</span>
+								</p>
+							</div>
+							<div class="div-img">
+								<a href="javascript:void(0);"><img src="images/imgxiebao/ias_150270470748265_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									viney女包专场 满298减60，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">1.3</span>
+									<span>折起</span>&nbsp;
+									<span>Zviney女包专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩3天
+									</span>
+								</p>
+							</div>
+						</div>
+					</h3>
+				</section>
+				<section class="section33 it nanshi">
+					<h3 class="tit2-h3img">
+						<img src="images/imgnanshi/men.png">
+						<div class="nvzhuang">
+							全部男士品牌
+							<span class="glyphicon glyphicon-circle-arrow-right"></span>
+						</div>
+						<div class="imgbox">
+							<div class="div-img1 dis-left">
+								<div class="shanguang"></div>
+								<a href="javascript:void(0);"><img src="images/imgnanshi/ias_150276578326113_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									G2000男装专场 满498减60，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">0.9</span>
+									<span>折起</span>&nbsp;
+									<span>G2000男装专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩5天
+									</span>
+								</p>
+							</div>
+							<div class="div-img1">
+								<div class="shanguang"></div>
+								<a href="javascript:void(0);"><img src="images/imgnanshi/ias_150287389376926_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									198元任选3件，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">0.8</span>
+									<span>折起</span>&nbsp;
+									<span>罗蒙&太子龙联合特卖专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩3天
+									</span>
+								</p>
+							</div>
+							<div class="div-img1 dis-left">
+								<div class="shanguang"></div>
+								<a href="javascript:void(0);"><img src="images/imgnanshi/ias_150184006975190_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									G2000男装专场 满598减60，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">0.6</span>
+									<span>折起</span>&nbsp;
+									<span>杰米克JenMick男装专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩19时
+									</span>
+								</p>
+							</div>
+							<div class="div-img1">
+								<div class="shanguang"></div>
+								<a href="javascript:void(0);"><img src="images/imgnanshi/ias_150294087594053_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									NO1DARA男装专场 满199减40，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">0.8</span>
+									<span>折起</span>&nbsp;
+									<span>NO1DARA男装专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩4天
+									</span>
+								</p>
+							</div>
+							<div class="div-img1 dis-left">
+								<div class="shanguang"></div>
+								<a href="javascript:void(0);"><img src="images/imgnanshi/ias_150276388861488_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									七匹狼SEPTWOLVES男装专场 
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">0.9</span>
+									<span>折起</span>&nbsp;
+									<span>七匹狼SEPTWOLVES男装专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩3天
+									</span>
+								</p>
+							</div>
+							<div class="div-img1">
+								<div class="shanguang"></div>
+								<a href="javascript:void(0);"><img src="images/imgnanshi/ias_150232928428976_570x273_90.jpg"></a>
+								<span class="spanxiabiao">
+									<span class="iconfont icon-silk-banner-verticle orange"></span>
+									298元任选2件，上不封顶
+								</span>
+								<p class="p-zhehou">
+									<span class="firspan title">1</span>
+									<span>折起</span>&nbsp;
+									<span>衣品天成EPTISON男装专场</span>
+									<span>
+										<span class="glyphicon glyphicon-time title"></span>
+										剩19时
+									</span>
+								</p>
+							</div>
+						</div>
+					</h3>
+				</section>
+			<!-- 	<section class="section33 it yundong">
+					<h3 class="tit2-h3img">
+						<img src="images/imgyundong/sport.png">
+						<div class="nvzhuang">
+							全部运动品牌
+							<span class="glyphicon glyphicon-circle-arrow-right"></span>
+						</div>
+					</h3>
+				</section>
+			</section>
+			<div class="last-img">
+				<div class="divv divv-left">
+					<img src="images/imgyundong/ias_150278043931199_570x273_90.jpg">
+					<a href="#">
+						<img src="img/link.png" alt="link">
+						<span>满298减50，上不封顶</span>
+					</a>
+					<p class="p-zhehou">
+						<span class="firspan title">2.5</span>
+						<span>折起</span>&nbsp;
+						<span>361°男女混合专场</span>
+						<span>
+							<span class="glyphicon glyphicon-time title"></span>
+							剩3天
+						</span>
+					</p>
+				</div>
+				<div class="divv ">
+					<img src="images/imgyundong/ias_150278770045992_570x273_90.jpg">
+					<a href="#">
+						<img src="img/link.png" alt="link">
+						<span>满99减30，上不封顶</span>
+					</a>
+					<p class="p-zhehou">
+						<span class="firspan title">2.1</span>
+						<span>折起</span>&nbsp;
+						<span>特步XTEP儿童运动鞋服专场</span>
+						<span>
+							<span class="glyphicon glyphicon-time title"></span>
+							剩3天
+						</span>
+					</p>
+				</div>
+				<div class="divv divv-left">
+					<img src="images/imgyundong/750x360_kdpi_570x273_90.jpg">
+					<a href="#">
+						<img src="img/link.png" alt="link">
+						<span>购物满2件即享8.8折优惠</span>
+					</a>
+					<p class="p-zhehou">
+						<span class="firspan title">5.6</span>
+						<span>折起</span>&nbsp;
+						<span>耐克Nike运动潮流男女专场</span>
+						<span>
+							<span class="glyphicon glyphicon-time title"></span>
+							剩2天
+						</span>
+					</p>
+				</div>
+				<div class="divv ">
+					<img src="images/imgyundong/1502698526642_570x273_90.jpg">
+					<a href="#">
+						<img src="img/link.png" alt="link">
+						<span>购物满2件即享8.8折优惠</span>
+					</a>
+					<p class="p-zhehou">
+						<span class="firspan title">3.5</span>
+						<span>折起</span>&nbsp;
+						<span>彪马PUMA男女运动鞋服专场</span>
+						<span>
+							<span class="glyphicon glyphicon-time title"></span>
+							剩2天
+						</span>
+					</p>
+				</div>
+				<div class="divv divv-left">
+					<img src="images/imgyundong/ias_150268238771006_570x273_90.jpg">
+					<a href="#">
+						<img src="img/link.png" alt="link">
+						<span>购物满2件即享8.8折优惠</span>
+					</a>
+					<p class="p-zhehou">
+						<span class="firspan title">3.8</span>
+						<span>折起</span>&nbsp;
+						<span>ONITSUKA TIGER复古休闲鞋专场</span>
+						<span>
+							<span class="glyphicon glyphicon-time title"></span>
+							剩2天
+						</span>
+					</p>
+				</div>
+				<div class="divv ">
+					<img src="images/imgyundong/ias_150253144335992_570x273_90.jpg">
+					<a href="#">
+						<img src="img/link.png" alt="link">
+						<span>购物满1件即享9折，满2件即享8.5折</span>
+					</a>
+					<p class="p-zhehou">
+						<span class="firspan title">1</span>
+						<span>折起</span>&nbsp;
+						<span>骆驼CAMEL健身瑜伽男女混合专场</span>
+						<span>
+							<span class="glyphicon glyphicon-time title"></span>
+							剩3天
+						</span>
+					</p>
+				</div>
+			</div> -->
+		</div>
+		<!-- 中部结束 -->
+		<!-- 尾部开始 -->
+		<footer>
+			<ul class="footul1">
+				<li>品类齐全，轻松购物</li>
+				<li>多仓直发，极速配送</li>
+				<li>正品行货，精致服务</li>
+				<li>天天低价，畅选无忧</li>
+			</ul>
+			<div class="footcon">
+				<ul class="footuls">
+					<li><a href="javascript:void(0)">购物指南</a></li>
+					<li><a href="javascript:void(0)">购物流程</a></li>
+					<li><a href="javascript:void(0)">会员介绍</a></li>
+					<li><a href="javascript:void(0)">生活旅行</a></li>
+					<li><a href="javascript:void(0)">常见问题</a></li>
+					<li><a href="javascript:void(0)">大家电</a></li>
+					<li><a href="javascript:void(0)">联系客服</a></li>
+				</ul>
+				<ul class="footuls">
+					<li><a href="javascript:void(0)">配送方式</a></li>
+					<li><a href="javascript:void(0)">上门自提</a></li>
+					<li><a href="javascript:void(0)">211限时达</a></li>
+					<li><a href="javascript:void(0)">配送服务查询</a></li>
+					<li><a href="javascript:void(0)">配送费收取标准</a></li>
+					<li><a href="javascript:void(0)">海外配送</a></li>
+				</ul>
+				<ul class="footuls">
+					<li><a href="javascript:void(0)">支付方式</a></li>
+					<li><a href="javascript:void(0)">货到付款</a></li>
+					<li><a href="javascript:void(0)">在线支付</a></li>
+					<li><a href="javascript:void(0)">分期付款</a></li>
+					<li><a href="javascript:void(0)">邮局汇款</a></li>
+					<li><a href="javascript:void(0)">公司转账</a></li>
+				</ul>
+				<ul class="footuls">
+					<li><a href="javascript:void(0)">售后服务</a></li>
+					<li><a href="javascript:void(0)">售后政策</a></li>
+					<li><a href="javascript:void(0)">价格保护</a></li>
+					<li><a href="javascript:void(0)">退款说明</a></li>
+					<li><a href="javascript:void(0)">返修/退换货</a></li>
+					<li><a href="javascript:void(0)">取消订单</a></li>
+				</ul>
+				<ul class="footuls">
+					<li><a href="javascript:void(0)">特色服务</a></li>
+					<li><a href="javascript:void(0)">夺宝岛</a></li>
+					<li><a href="javascript:void(0)">DIY装机</a></li>
+					<li><a href="javascript:void(0)">延保服务</a></li>
+					<li><a href="javascript:void(0)">海淘E卡</a></li>
+					<li><a href="javascript:void(0)">海淘通信</a></li>
+					<li><a href="javascript:void(0)">海淘JD+</a></li>
+				</ul>
+			</div>
+			<div class="footconright">
+				<h4>海淘自营覆盖区县</h4>
+				<p>海淘已向全国2661个区县提供自</p>
+				<p>营配送服务，支持货到付款、POS</p>
+				<p>机刷卡和售后上门服务。</p>
+				<a href="javascript:void(0)">查看详情
+				<span class="glyphicon glyphicon-menu-right"></span>
+				</a>
+			</div>
+			<div style="clear: both"></div>
+			<ul class="footxiaul">
+				<li><a href="javascript:void(0)">关于我们</a></li>
+				<li><a href="javascript:void(0)">联系我们</a></li>
+				<li><a href="javascript:void(0)">联系客服</a></li>
+				<li><a href="javascript:void(0)">合作招商</a></li>
+				<li><a href="javascript:void(0)">商家帮助</a></li>
+				<li><a href="javascript:void(0)">营销中心</a></li>
+				<li><a href="javascript:void(0)">手机海淘</a></li>
+				<li><a href="javascript:void(0)">友情链接</a></li>
+				<li><a href="javascript:void(0)">销售联盟</a></li>
+				<li><a href="javascript:void(0)">海淘社区</a></li>
+				<li><a href="javascript:void(0)">风险监测</a></li>
+				<li><a href="javascript:void(0)">隐私政策</a></li>
+				<li><a href="javascript:void(0)">海淘公益</a></li>
+				<li><a href="javascript:void(0)">English Site</a></li>
+				<li><a href="javascript:void(0)">Media & IR</a></li>
+			</ul>
+			<div class="footdiv">
+				<p>京公网安备 11000002000088号&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;互联网药品信息服务资格证编号(京)-经营性-2014-0008&nbsp;&nbsp;|&nbsp;&nbsp;新出发京零 字第大120007号</p>
+				<p>互联网出版许可证编号新出网证(京)字150号&nbsp;&nbsp;|&nbsp;&nbsp;出版物经营许可证&nbsp;&nbsp;|&nbsp;&nbsp;网络文化经营许可证京网文[2014]2148-348号&nbsp;&nbsp;|&nbsp;&nbsp;违法和不良信息举报电话：4006561155</p>
+				<p>Copyright © 2004 - 2017  海淘JD.com 版权所有&nbsp;&nbsp;|&nbsp;&nbsp;消费者维权热线：4006067733经营证照</p>
+				<p>海淘旗下网站：海淘支付&nbsp;&nbsp;|&nbsp;&nbsp;海淘云</p>
+			</div>
+		</footer>
+		<!-- 尾部结束 -->
+		<div class="asidenav">
+			<ul> 
+				<li>
+
+					<a class="num" href="javascript:void(0)">1F</a>
+					<a class="word title-bg" href="javascript:void(0)">
+						<span class="iconfont icon-kongxinwujiaoxing"></span>精选
+					</a>
+				</li>
+				<li>
+					<a class="num" href="javascript:void(0)">2F</a>
+					<a class="word title-bg" href="javascript:void(0)">
+						<span class="iconfont icon-nvzhuang"></span>女装
+					</a>
+				</li>
+				<li>
+					<a class="num" href="javascript:void(0)">3F</a>
+					<a class="word title-bg" href="javascript:void(0)">
+					<span class="iconfont icon-gouwudai"></span>鞋包</a>
+				</li>
+				<li>
+					<a class="num" href="javascript:void(0)">4F</a>
+					<a class="word title-bg" href="javascript:void(0)">
+					<span class="iconfont icon-57"></span>男士</a>
+				</li>
+				<li>
+					<a class="num" href="javascript:void(0)">5F</a>
+					<a class="word title-bg" href="javascript:void(0)">
+					<span class="iconfont icon-yundong"></span>运动</a>
+				</li>
+			</ul>
+			<a href="javascript:void(0)" class="Top">Top
+			<span class="glyphicon glyphicon-triangle-top"></span>
+			</a>
+		</div>
+	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		// httpCacheUtil.update("css/index.css");
+		// httpCacheUtil.update("js/index.js");
+	</script>
+	<script type="text/javascript">
+		// var vm=new Vue({
+		// 		el:"#app",
+		// 		data:{
+					
+		// 		},
+		// 		methods:{
+					
+		// 		}
+
+		// 	})
+	</script>
+</body>
+</html>

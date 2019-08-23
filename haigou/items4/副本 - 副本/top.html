@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>top的区别</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		#box{
+			position: fixed;
+			top:100px;
+			border:1px solid red;
+			width:100%;
+			/*height: 100px;*/
+			overflow-x:hidden;
+		}
+		#box>div{
+			position: relative;
+		}
+		div.box_1_item{
+			float:left;
+			width:200px;
+			height: 200px;
+			background: yellow;
+			transform:rotate(45deg);
+
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div id="box" >
+		<div id="box_1">
+			<div class="box_1_item"></div>
+			
+		</div>
+	</div>
+	<script>
+	
+		// $(function(){
+		
+		// 	var box1 = document.getElementById("box1");
+		// 		var top = $("#box1").offset().top;
+		// 		console.log(box1.offsetTop+"这是offsetTop" );
+		// 		console.log(top+"这是offset().top");
+		// 		console.log("----------")
+		// 	$("#box").scroll(function(){
+		// 			var box1 = document.getElementById("box1");
+		// 			var top = $("#box1").offset().top;
+		// 			console.log(box1.offsetTop+" 这是offsetTop<br />" );
+					
+		// 			console.log(top+" 这是offset().top");
+		// 	})
+		// })
+	</script>
+</body>
+</html>

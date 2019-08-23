@@ -1,0 +1,115 @@
+/*body,div,header,footer,nav,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,li,hr,table,aside,article,hgroup,figure{
+	padding:0;
+	margin:0;
+}*/
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	tap-highlight-color:transparent;
+	-webkit-tap-highlight-color:transparent;
+}
+body{
+	font-family: "Microsoft Yahei",sans-serif;
+	font-size:12px;
+}
+body,div{
+	display: block;
+}
+a{
+	text-decoration:none;
+	color:#666;
+	transition:all .5s;
+}
+a:hover {
+    color: #c81623;
+}
+li{
+	list-style: none;
+}
+img{
+	border:0;
+}
+
+/*定位*/
+.relative{
+	position: relative;
+}
+.absolute{
+	position: absolute;
+}
+.absolute-auto{
+	position: absolute;
+	top:0;right:0;bottom:0;left:0;margin:auto;
+}
+.fixed-top{
+	position: fixed;
+	top:0;
+}
+.fixed-bottom{
+	position: fixed;
+	bottom:0;
+}
+/*End 定位*/
+
+/*清除浮动，显示、隐藏*/
+.clear{
+	clear: both;
+}
+.clearfix:before,
+.clearfix:after{
+	height: 0;
+	clear:both;
+	content:" ";
+	display: block;
+}
+.clearfix{
+	*zoom:1;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+.hide{
+	display: none;
+}
+.show{
+	display: block;
+}
+/*End 清除浮动，显示、隐藏*/
+
+/*公用样式 2*/
+.width-auto{
+	width:100%;
+}
+.margin-auto{
+	margin:auto;
+}
+.margin-0{
+	margin:0;
+}
+.padding-0{
+	padding:0;
+}
+.border-none{
+	border:none;
+	outline:none;
+}
+.bg-red{
+	background-color:red;
+}
+.text-red{
+	color:red  !important;
+}
+.bg-white{
+	background-color: #fff;
+}
+.text-white{
+	color:#fff;
+}
+/*End 公用样式 2*/
+
+/**/
